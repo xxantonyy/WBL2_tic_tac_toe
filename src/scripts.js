@@ -69,7 +69,6 @@ function FillPlayGround () {
 		for(let col = 0; col < PLAYFIELD_COLUMNS; col++) {
 			if(game.playground[row][col] == 0) continue;
 			const ceil = cells[ConverToCEil(row,col)];
-			if(ceil.children[0].src === 'http://localhost:5000/') {
 				if(game.player === 2) {
 					ceil.children[0].src = 'https://cdn-icons-png.flaticon.com/512/7420/7420933.png';
 					ceil.children[0].style.display = 'block';
@@ -78,7 +77,6 @@ function FillPlayGround () {
 					ceil.children[0].src= 'https://cdn-icons-png.flaticon.com/512/32/32463.png';
 					ceil.children[0].style.display = 'block';
 				}
-			};
 		}
 	}
 }
@@ -88,7 +86,6 @@ function FillPlayGroundRefresh () {
 		for(let col = 0; col < PLAYFIELD_COLUMNS; col++) {
 			if(game.playground[row][col] == 0) continue;
 			const ceil = cells[ConverToCEil(row,col)];
-			if(ceil.children[0].src === 'http://localhost:5000/') {
 				if(game.playground[row][col] === 1) {
 					ceil.children[0].src = 'https://cdn-icons-png.flaticon.com/512/7420/7420933.png';
 					ceil.children[0].style.display = 'block';
@@ -97,7 +94,6 @@ function FillPlayGroundRefresh () {
 					ceil.children[0].src= 'https://cdn-icons-png.flaticon.com/512/32/32463.png';
 					ceil.children[0].style.display = 'block';
 				}
-			};
 		}
 	}
 }
